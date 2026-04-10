@@ -1,0 +1,17 @@
+{
+  "last_run": null,
+  "traditional": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0,
+    "pass_rate": 0,
+    "failures": []
+  },
+  "intent_based": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0,
+    "pass_rate": 0,
+    "failures": []
+  }
+}

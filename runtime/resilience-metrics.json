@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-04-10T14:14:43.824Z",
+  "traditional": {
+    "total_tests": 4,
+    "passed": 1,
+    "failed": 3,
+    "pass_rate": 0.25,
+    "avg_duration_ms": 0,
+    "failure_breakdown": {
+      "shadow_boundary": 3,
+      "async_rendering": 0,
+      "selector_fragility": 0
+    }
+  },
+  "intent_based": {
+    "total_tests": 4,
+    "passed": 4,
+    "failed": 0,
+    "pass_rate": 1,
+    "avg_duration_ms": 0,
+    "failure_breakdown": {
+      "shadow_boundary": 0,
+      "async_rendering": 0,
+      "selector_fragility": 0
+    }
+  },
+  "improvement": {
+    "pass_rate_delta": 0.75,
+    "improvement_factor": 4,
+    "maintenance_time_saved_pct": 75
+  },
+  "top_fragile_selectors": [
+    {
+      "selector": ".btn-primary",
+      "failure_rate": 1,
+      "reason": "Unknown reason",
+      "recommended_alternative": "getByRole('button')"
+    },
+    {
+      "selector": "#submit",
+      "failure_rate": 1,
+      "reason": "Unknown reason",
+      "recommended_alternative": "getByTestId('...')"
+    },
+    {
+      "selector": "div > button",
+      "failure_rate": 1,
+      "reason": "Unknown reason",
+      "recommended_alternative": "getByRole('button')"
+    }
+  ],
+  "selector_type_analysis": {
+    "css_class": {
+      "pass_rate": 0,
+      "count": 2,
+      "recommendation": "avoid"
+    },
+    "css_id": {
+      "pass_rate": 0,
+      "count": 1,
+      "recommendation": "avoid"
+    },
+    "role_based": {
+      "pass_rate": 1,
+      "count": 4,
+      "recommendation": "preferred"
+    },
+    "testid": {
+      "pass_rate": 1,
+      "count": 1,
+      "recommendation": "preferred"
+    }
+  }
+}

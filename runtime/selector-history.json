@@ -1,0 +1,70 @@
+[
+  {
+    "selector": ".btn-primary",
+    "type": "css_class",
+    "result": "failed",
+    "test": "s1",
+    "approach": "traditional",
+    "shadow_depth": 2,
+    "timestamp": "2026-04-10T14:14:43.820Z"
+  },
+  {
+    "selector": "#submit",
+    "type": "css_id",
+    "result": "failed",
+    "test": "s2",
+    "approach": "traditional",
+    "shadow_depth": 1,
+    "timestamp": "2026-04-10T14:14:43.820Z"
+  },
+  {
+    "selector": "div > button",
+    "type": "css_structural",
+    "result": "failed",
+    "test": "s3",
+    "approach": "traditional",
+    "shadow_depth": 3,
+    "timestamp": "2026-04-10T14:14:43.821Z"
+  },
+  {
+    "selector": "getByRole('link')",
+    "type": "role_based",
+    "result": "passed",
+    "test": "s4",
+    "approach": "traditional",
+    "shadow_depth": 0,
+    "timestamp": "2026-04-10T14:14:43.821Z"
+  },
+  {
+    "selector": "getByRole('button', { name: /submit/i })",
+    "type": "role_based",
+    "result": "passed",
+    "test": "s1",
+    "approach": "intent-based",
+    "timestamp": "2026-04-10T14:14:43.822Z"
+  },
+  {
+    "selector": "getByTestId('submit-btn')",
+    "type": "testid",
+    "result": "passed",
+    "test": "s2",
+    "approach": "intent-based",
+    "timestamp": "2026-04-10T14:14:43.822Z"
+  },
+  {
+    "selector": "getByRole('button')",
+    "type": "role_based",
+    "result": "passed",
+    "test": "s3",
+    "approach": "intent-based",
+    "timestamp": "2026-04-10T14:14:43.823Z"
+  },
+  {
+    "selector": "getByRole('link')",
+    "type": "role_based",
+    "result": "passed",
+    "test": "s4",
+    "approach": "intent-based",
+    "timestamp": "2026-04-10T14:14:43.823Z"
+  }
+]

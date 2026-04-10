@@ -1,0 +1,29 @@
+{
+  "name": "shadow-dom-intent-testing",
+  "version": "1.0.0",
+  "description": "Intent-based automation for Shadow DOM and modern componentized UIs",
+  "scripts": {
+    "start:app": "npx serve app-under-test -p 3001",
+    "test:traditional": "vitest run tests/regression/traditional-selectors.test.js",
+    "test:intent": "vitest run tests/regression/intent-based-selectors.test.js",
+    "test:scenarios": "vitest run tests/scenarios",
+    "test:all": "vitest run tests",
+    "console": "node support-console/server.js",
+    "start:all": "concurrently -n app,console -c blue,green \"npm run start:app\" \"npm run console\"",
+    "reset": "node -e \"console.log('Runtime state cleared.')\"",
+    "test": "node tests/run-tests.js",
+    "test:integration": "node tests/integration.js"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.41.0",
+    "vitest": "^1.2.0",
+    "serve": "^14.2.0"
+  },
+  "keywords": ["shadow-dom", "intent-testing", "playwright", "web-components"],
+  "author": "Martin Dao",
+  "license": "MIT"
+}

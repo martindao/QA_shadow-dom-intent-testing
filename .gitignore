@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Runtime files (except templates)
+flake-control-plane/runtime/*.json
+!flake-control-plane/runtime/templates/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Test outputs
+test-results/
+playwright-report/
+coverage/
