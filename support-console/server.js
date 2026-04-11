@@ -6,7 +6,7 @@ const fs = require('fs');
 const path = require('path');
 const store = require('../runtime/store');
 
-const PORT = process.env.CONSOLE_PORT || 3003;
+const PORT = process.env.CONSOLE_PORT || 3001;
 const REPORTS_DIR = path.join(__dirname, '..', 'reports');
 
 function serveFile(res, filePath, contentType) {

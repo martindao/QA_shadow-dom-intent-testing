@@ -11,8 +11,8 @@ npm run start:all
 ```
 
 This should start:
-- Demo app on port 3001
-- Support console on port 3003
+- Demo app on port 3000
+- Support console on port 3001
 
 ## 2. Unit Tests
 
@@ -44,7 +44,7 @@ Tests should cover:
 
 ## 4. Manual UI Verification
 
-Open `http://localhost:3003`
+Open `http://localhost:3001`
 
 ### Scenario A — Slotted Dialog
 
@@ -143,7 +143,7 @@ The demo app must have:
 - Nested form with 3+ levels of shadow DOM
 - Async component with delayed rendering
 
-Visit `http://localhost:3001` and verify:
+Visit `http://localhost:3000/src/` and verify:
 - All components render correctly
 - Shadow DOM structure matches expected depth
 - Async component loads after delay

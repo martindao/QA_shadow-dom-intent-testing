@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "Intent-based automation for Shadow DOM and modern componentized UIs",
   "scripts": {
-    "start:app": "npx serve app-under-test -p 3001",
+    "start:app": "npx serve app-under-test -p 3000",
     "test:traditional": "vitest run tests/regression/traditional-selectors.test.js",
     "test:intent": "vitest run tests/regression/intent-based-selectors.test.js",
     "test:scenarios": "vitest run tests/scenarios",
     "test:all": "vitest run tests",
     "console": "node support-console/server.js",
     "start:all": "concurrently -n app,console -c blue,green \"npm run start:app\" \"npm run console\"",
-    "reset": "node -e \"console.log('Runtime state cleared.')\"",
+    "reset": "node -e \"const store = require('./runtime/store'); store.resetRuntime(); console.log('Runtime state cleared.');\"",
     "test": "node tests/run-tests.js",
     "test:integration": "node tests/integration.js"
   },

@@ -580,3 +580,45 @@ A QA hiring manager should:
 6. Decide to interview within 5 minutes
 
 If the repo just looks like "a few Playwright tests", it failed. It must look like an AUTOMATION FRAMEWORK.
+
+## Additional Deliverable Requirement
+
+The builder must create these extra files before calling the repo complete:
+
+- `PORTFOLIO_INTEGRATION.md`
+- `SCREENSHOT_PLAN.md`
+
+### `PORTFOLIO_INTEGRATION.md` must include
+- canonical project title
+- role family (SUP / QA / SEC / DATA / CFT)
+- homepage card title
+- one-sentence homepage description
+- category label
+- tag list
+- GitHub CTA label
+- demo-page requirements
+- SVG artwork direction
+
+### `SCREENSHOT_PLAN.md` must include
+- 3-5 required screenshot/GIF shots
+- exact UI states to capture
+- one hero/cover image recommendation for the portfolio page
+
+## Final Locked Reference Repos (Do Not Replace Casually)
+
+### Primary GitHub / issue references
+- `https://github.com/microsoft/playwright/issues/38166`
+  - Use for: slotted Shadow DOM failure pattern
+- `https://playwright.dev/docs/shadow-dom`
+  - Use for: official Shadow DOM interaction guidance
+- `https://docs.cypress.io/api/commands/shadow`
+  - Use for: alternative framework comparison, not primary implementation
+
+### What to borrow
+- traversal pattern ideas
+- intent-based locator philosophy
+- async shadow-root waiting patterns
+
+### What not to copy literally
+- raw docs examples as final product
+- third-party component demos 1:1
