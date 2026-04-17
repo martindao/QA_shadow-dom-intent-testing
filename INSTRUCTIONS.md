@@ -24,12 +24,12 @@
 ## What This Repo Proves
 
 Martin Dao can:
-- Automate through nested Shadow DOM boundaries (up to 5 levels deep)
+- Automate through nested Shadow DOM boundaries (up to 3 levels deep)
 - Replace fragile CSS/XPath selectors with semantic intent locators
 - Build reusable fixture patterns for complex component trees
 - Handle non-deterministic UI rendering and async component loading
 - Generate test reports that prove automation coverage actually works
-- Reduce selector maintenance time by 80%+
+- Reduce selector maintenance effort significantly
 
 ---
 
@@ -52,7 +52,7 @@ Martin Dao can:
 - **Key lesson:** Cypress requires `.shadow()` command to pierce boundaries. Traditional `cy.get()` fails silently.
 - **Use this for:** Alternative framework comparison
 
-#### 4. Virtuoso QA: "Why Shadow DOM Encapsulation Breaks 73% of Automation Projects" (2026)
+#### 4. Virtuoso QA: "Why Shadow DOM Encapsulation Breaks Automation Projects" (2026)
 - **URL:** https://www.virtuosoqa.com/blog/shadow-dom-automation-challenges
 - **Key lesson:** Enterprise apps using Web Components (Salesforce Lightning, ServiceNow) fail automation because locators can't reach shadow elements.
 - **Use this for:** Business impact framing
@@ -404,7 +404,7 @@ Commit a sample report to `reports/sample-selector-resilience.md`:
 - 45 tests total
 - Traditional selectors: 12/45 passing (27%)
 - Intent-based selectors: 43/45 passing (96%)
-- Selector maintenance time reduced by 80%
+- Selector maintenance effort reduced significantly
 
 ## Top 5 Most Fragile Selectors
 1. `.btn-primary` — breaks on every design system update
@@ -424,7 +424,7 @@ Commit a sample report to `reports/sample-selector-resilience.md`:
 
 ### Functional
 - [ ] All 3 scenarios demonstrate traditional vs intent-based contrast
-- [ ] Shadow traversal fixtures work for 1-5 levels of nesting
+- [ ] Shadow traversal fixtures work for 1-3 levels of nesting
 - [ ] Async component waiting handles both sync and async shadow DOM
 - [ ] Operator dashboard shows side-by-side test results
 - [ ] Reset → Simulate flow works
@@ -520,12 +520,12 @@ Modern UIs use Shadow DOM for encapsulation. Traditional CSS selectors fail beca
 
 ## The Startup Pain This Solves
 - Tests breaking when designers change class names
-- 73% of automation projects fail on Shadow DOM apps
+- Shadow DOM encapsulation breaks traditional CSS selectors, making test automation significantly harder
 - Hours wasted maintaining fragile selectors
 - False negatives hiding real regressions
 
 ## What This Repo Demonstrates
-- Shadow DOM traversal up to 5 levels deep
+- Shadow DOM traversal up to 3 levels deep
 - Intent-based locators (role, accessible name, data-testid)
 - Async component waiting patterns
 - Reusable fixture library

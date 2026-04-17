@@ -6,7 +6,7 @@ Shadow DOM Intent-Based Testing Harness
 
 ## Short Portfolio Pitch
 
-Modern UI frameworks use Shadow DOM for component encapsulation, breaking traditional CSS selectors. This repo demonstrates intent-based automation that survives UI refactors with a 69% improvement in test pass rate and 81% reduction in maintenance time.
+Modern UI frameworks use Shadow DOM for component encapsulation, breaking traditional CSS selectors. This repo demonstrates intent-based automation that survives UI refactors with a 3.4x improvement in test pass rate.
 
 ## One-Line Card Description
 
@@ -48,7 +48,7 @@ A layered, nested component visualization showing shadow DOM boundaries pierced 
 ### Typography
 - Title: "Shadow DOM Testing"
 - Subtitle: "Intent-Based Automation"
-- Stats: "69% Improvement" badge
+- Stats: "3.4x Improvement" badge
 
 ### Style
 - Minimalist, geometric
@@ -64,7 +64,7 @@ A layered, nested component visualization showing shadow DOM boundaries pierced 
 - Key metrics: 27% → 93% pass rate, 3.4x improvement
 
 ### Problem Statement
-- 73% of automation projects fail on Shadow DOM apps
+- Many automation projects fail on Shadow DOM apps
 - Traditional selectors cannot pierce shadow boundaries
 - Tests break on every design system update
 
@@ -74,7 +74,7 @@ A layered, nested component visualization showing shadow DOM boundaries pierced 
 - Operator dashboard with live simulation
 
 ### Technical Highlights
-- Shadow DOM traversal up to 5 levels deep
+- Shadow DOM traversal up to 3 levels deep
 - Async component handling
 - Resilience metrics engine
 - File-backed runtime store
@@ -99,7 +99,7 @@ A layered, nested component visualization showing shadow DOM boundaries pierced 
 id: qa-shadow-dom
 title: Shadow DOM Intent Testing
 family: QA
-description: Intent-based automation for Shadow DOM with 69% test reliability improvement
+description: Intent-based automation for Shadow DOM with 3.4x test reliability improvement
 tags: [Shadow DOM, Playwright, Test Automation, Web Components]
 route: /projects/qa-shadow-dom
 featured: true

@@ -201,7 +201,7 @@ Human-readable resilience report.
 - 45 tests total
 - Traditional selectors: 12/45 passing (27%)
 - Intent-based selectors: 42/45 passing (93%)
-- Selector maintenance time reduced by 80%
+- Selector maintenance effort reduced significantly
 
 ## Shadow DOM Challenges Detected
 - Slotted content: 6 test failures (traditional approach)

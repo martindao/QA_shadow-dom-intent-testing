@@ -46,7 +46,7 @@ Must include inline sections:
 
 Must include:
 - **Resilience Score** — large prominent comparison (27% vs 93%)
-- **Maintenance Savings** — percentage (80%)
+- **Maintenance Savings** — qualitative (significant reduction)
 - **Live Test buttons:**
   - Run Traditional Tests
   - Run Intent-Based Tests
