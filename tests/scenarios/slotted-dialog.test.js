@@ -163,18 +163,49 @@ describe('Scenario 1: Slotted Dialog', () => {
   it('shadow DOM structure verification', async ({ page }) => {
     // Get all shadow roots for debugging
     const shadowRoots = await getAllShadowRoots(page);
-    
+
     // Find slotted-dialog shadow root
     const dialogShadow = shadowRoots.find(sr => sr.tagName === 'slotted-dialog');
-    
+
     expect(dialogShadow).toBeDefined();
     expect(dialogShadow.depth).toBe(0);
     expect(dialogShadow.childCount).toBeGreaterThan(0);
-    
+
     appendSelectorHistory({
       scenario: 'slotted-dialog',
       approach: 'intent-based',
       selector: 'shadow structure verification',
+      result: 'passed',
+      duration_ms: 0,
+      shadow_depth: 1
+    });
+  });
+
+  // Accessibility-aware locator example (minor enhancement)
+  // Role/name locators are more resilient than CSS selectors because they:
+  // 1. Match how assistive technology perceives the element
+  // 2. Survive DOM restructuring that preserves semantic meaning
+  // 3. Fail explicitly when accessibility attributes are missing
+  it('accessibility-aware locator - role and name pattern', async ({ page }) => {
+    // Using byRoleAndName helper for semantic, accessibility-aligned selection
+    // This pattern mirrors Playwright's getByRole('button', {name: '...'})
+    // but works within shadow DOM traversal context
+    const dialog = page.locator('slotted-dialog');
+    const shadowContent = dialog.locator(':scope');
+
+    // Accessibility-aware: select by role + aria-label (semantic intent)
+    // More resilient than 'button#confirm-btn' CSS selector
+    const confirmButton = shadowContent.locator(
+      byRoleAndName('button', 'Confirm')
+    );
+
+    await expect(confirmButton).toBeVisible();
+    await confirmButton.click();
+
+    appendSelectorHistory({
+      scenario: 'slotted-dialog',
+      approach: 'accessibility-aware',
+      selector: 'byRoleAndName("button", "Confirm")',
       result: 'passed',
       duration_ms: 0,
       shadow_depth: 1
